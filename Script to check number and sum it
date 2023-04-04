@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Enter the string:"
 read a
 count=0
@@ -15,7 +17,8 @@ do
                    break
            fi
     else
-        echo "The sum of the numbers in the string is: $count"
+        echo "result: $count"
+        echo "Number of valid input items: $num"
         break
     fi
 done
