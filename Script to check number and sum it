@@ -1,0 +1,21 @@
+echo "Enter the string:"
+read a
+count=0
+num=0
+for i in `echo $a`
+do
+
+    if [[ $i =~ ^[0-9]+$ ]]
+    then
+            count=`expr $count + $i`
+            num=`expr $num + 1`
+           if [ $num -ge 10 ]
+           then
+                   echo "$count"
+                   break
+           fi
+    else
+        echo "The sum of the numbers in the string is: $count"
+        break
+    fi
+done
